@@ -33,7 +33,7 @@ const db = new sqlite3.Database(DB_PATH, (err) => {
 
 // 🔹 RUTA PRINCIPAL
 app.get('/', (req, res) => {
-  res.send('Servidor funcionando 🚀');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
